@@ -1,0 +1,9 @@
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
+
+export PS1="\nSC8:\[$bldblu\] \w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ \[$txtwht\] "
+# export PS1="\n\[$txtpur\]\u\[$bldwht\]@\h\[$bldgrn\]:\[$bldblu\] \w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ \[$txtwht\] "
+export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w\$ "
+export PATH=$PATH:/Users/scottcate/bin
+
+source '/Users/scottcate/lib/azure-cli/az.completion'
