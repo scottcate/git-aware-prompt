@@ -8,7 +8,10 @@ export PATH=$PATH:/Users/scottcate/bin
 
 source '/Users/scottcate/lib/azure-cli/az.completion'
 
-
+# ----------------------
+# Open Microsoft IDWeb
+# ----------------------
+alias idweb='kdestroy --all; kinit --keychain scottca@REDMOND.CORP.MICROSOFT.COM; open http://idweb -a Safari.app'
 
 # ----------------------
 # Git Aliases
@@ -36,6 +39,11 @@ alias gst='git stash'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gstd='git stash drop'
+
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+
 
 # ----------------------
 # Git Functions
